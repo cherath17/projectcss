@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.i1 {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.text{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: silver;
+}
+.overlay{
+    position: absolute;
+    transition: all .3s;
+    background: #eee;
+    opacity: 0;
+}
+.container:hover .overlay{
+    opacity: 1;
+}
+.overlay-left{
+    width: 0;
+    height:100%;
+    top: 0;
+    left: 0;
+}
+.container:hover .overlay-left{
+width:100%;
+}
+
+.container2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.i2{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.text1{
+    position: absolute;
+    font-size: 20px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.overlay{
+    position: absolute;
+    transition: all 0.2s;
+    background: #eee;
+    opacity: 0;
+}
+.container:hover.overlay{
+    width: 100%;
+    opacity: 1;
+}
+.overlay-top{
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+.container:hover .overlay-top{
+    height: 100%;
+}
+.overlay-Cross{
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+.container:hover .overlay-Cross{
+    height: 100%;
+    width: 100%;
+}
+.overlay-Fade{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
